@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Respira Libre – Organización dedicada a la prevención del vapeo en adolescentes y jóvenes. Información confiable, educativa y actualizada sobre los riesgos del vapeador." />
+  <meta name="keywords" content="prevención vapeo, riesgos vaping, adolescentes, salud juvenil, nicotina, adicción" />
+  <title>Respira Libre – Prevención del Vapeo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       TOPBAR – Línea institucional superior
+  ═══════════════════════════════════════ -->
+  <div class="topbar" role="banner">
+    <div class="topbar-inner">
+      <span class="topbar-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.64 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+        Línea de ayuda: <strong>+52 800 123 4567</strong>
+      </span>
+      <span class="topbar-sep" aria-hidden="true">|</span>
+      <span class="topbar-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Lun–Vie &nbsp;9:00 – 18:00 hrs
+      </span>
+      <span class="topbar-sep" aria-hidden="true">|</span>
+      <a href="mailto:contacto@respiralibre.org" class="topbar-item topbar-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        contacto@respiralibre.org
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR principal
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav-logo" data-page="inicio" aria-label="Respira Libre – Inicio">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="#1a5c36"/>
+            <path d="M14 30c0-5.52 4.48-10 10-10s10 4.48 10 10" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            <path d="M24 20V13" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            <path d="M18 15.5l6-3.5 6 3.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="33" r="3.5" fill="white"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Respira Libre</span>
+          <span class="logo-sub">Prevención del Vapeo</span>
+        </div>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Links -->
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a class="nav-link active" data-page="inicio"        href="#inicio"        role="menuitem">Inicio</a></li>
+        <li role="none"><a class="nav-link"         data-page="nosotros"     href="#nosotros"      role="menuitem">Nosotros</a></li>
+        <li role="none"><a class="nav-link"         data-page="consecuencias" href="#consecuencias" role="menuitem">Consecuencias</a></li>
+        <li role="none"><a class="nav-link"         data-page="prevencion"   href="#prevencion"    role="menuitem">Prevención</a></li>
+        <li role="none"><a class="nav-link"         data-page="testimonios"  href="#testimonios"   role="menuitem">Testimonios</a></li>
+        <li role="none"><a class="nav-link nav-cta" data-page="contacto"     href="#contacto"      role="menuitem">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       MAIN – Contenedor de páginas
+  ═══════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ─────────────────────────────────────
+         PÁGINA 1 · INICIO
+    ───────────────────────────────────── -->
+    <section class="page" id="page-inicio" data-page="inicio" aria-label="Inicio">
+
+      <!-- Hero -->
+      <div class="hero-section">
+        <div class="hero-media">
+          <img src="hero_healthy_youth_1782280890329.png"
+               alt="Jóvenes saludables eligiendo una vida activa y sin vapeo"
+               class="hero-img" />
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-body">
+          <div class="hero-kicker">
+            <span class="kicker-dot" aria-hidden="true"></span>
+            Organización de Salud Juvenil · México
+          </div>
+          <h1 class="hero-title">Tu salud vale&nbsp;más<br />que&nbsp;una&nbsp;moda.</h1>
+          <p class="hero-desc">
+            El vapeo no es inofensivo. Conoce los riesgos reales, comprendidos por la ciencia,
+            y toma decisiones informadas que protejan tu futuro.
+          </p>
+          <div class="hero-btns">
+            <button class="btn btn-primary" data-page="consecuencias" id="hero-riesgos-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Conoce los riesgos del vapeo
+            </button>
+            <button class="btn btn-secondary" data-page="prevencion" id="hero-prevencion-btn">
+              Estrategias de prevención
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Franja de datos clave -->
+      <div class="key-facts" role="list" aria-label="Datos clave sobre el vapeo">
+        <div class="key-fact" role="listitem">
+          <span class="kf-value">99%</span>
+          <span class="kf-label">de vapeadores contienen nicotina</span>
+        </div>
+        <div class="kf-div" aria-hidden="true"></div>
+        <div class="key-fact" role="listitem">
+          <span class="kf-value">3x</span>
+          <span class="kf-label">más vulnerables los adolescentes a la adicción</span>
+        </div>
+        <div class="kf-div" aria-hidden="true"></div>
+        <div class="key-fact" role="listitem">
+          <span class="kf-value">+2 M</span>
+          <span class="kf-label">jóvenes afectados en México</span>
+        </div>
+        <div class="kf-div" aria-hidden="true"></div>
+        <div class="key-fact" role="listitem">
+          <span class="kf-value">70%</span>
+          <span class="kf-label">de quienes vapean lo iniciaron antes de los 18</span>
+        </div>
+      </div>
+
+      <!-- Llamadas a acción de sección -->
+      <div class="inicio-cards">
+        <article class="inicio-card" tabindex="0">
+          <div class="ic-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="ic-body">
+            <h2>Consecuencias del vapeo</h2>
+            <p>Descubre los efectos comprobados del vapeo sobre tu sistema respiratorio, cardiovascular y cerebro en desarrollo.</p>
+            <button class="ic-link" data-page="consecuencias">Ver consecuencias →</button>
+          </div>
+        </article>
+
+        <article class="inicio-card" tabindex="0">
+          <div class="ic-icon ic-green" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="ic-body">
+            <h2>Estrategias de prevención</h2>
+            <p>Conoce herramientas prácticas y basadas en evidencia para resistir la presión social y mantener hábitos saludables.</p>
+            <button class="ic-link" data-page="prevencion">Ver estrategias →</button>
+          </div>
+        </article>
+
+        <article class="inicio-card" tabindex="0">
+          <div class="ic-icon ic-blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="ic-body">
+            <h2>Historias de jóvenes</h2>
+            <p>Lee testimonios reales de adolescentes que superaron la adicción al vapeo y recuperaron su salud y rendimiento.</p>
+            <button class="ic-link" data-page="testimonios">Leer testimonios →</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Aviso científico -->
+      <div class="science-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+        <p>Toda la información publicada en este sitio está basada en investigaciones científicas avaladas por la <strong>OMS</strong>, la <strong>FDA</strong> y el <strong>IMSS</strong>.</p>
+      </div>
+
+    </section><!-- /INICIO -->
+
+
+    <!-- ─────────────────────────────────────
+         PÁGINA 2 · NOSOTROS
+    ───────────────────────────────────── -->
+    <section class="page hidden" id="page-nosotros" data-page="nosotros" aria-labelledby="nosotros-h1">
+
+      <div class="page-hero page-hero--light">
+        <div class="ph-content">
+          <div class="ph-breadcrumb" aria-label="Ruta de navegación">
+            <button data-page="inicio">Inicio</button>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Nosotros</span>
+          </div>
+          <h1 id="nosotros-h1">¿Quiénes somos?</h1>
+          <p>Conoce la organización, las personas y los valores que impulsan nuestro trabajo cada día.</p>
+        </div>
+      </div>
+
+      <div class="page-body">
+
+        <div class="org-intro">
+          <div class="org-intro-text">
+            <span class="section-label">Nuestra organización</span>
+            <h2>Comprometidos con la salud de los jóvenes</h2>
+            <p>
+              Somos una organización comprometida con la prevención del vapeo y la promoción de estilos
+              de vida saludables entre adolescentes y jóvenes. Nuestro objetivo es proporcionar
+              información confiable, educativa y actualizada para ayudar a las personas a tomar
+              decisiones responsables sobre su salud.
+            </p>
+            <p>
+              Trabajamos con escuelas, familias y comunidades en todo México para garantizar que
+              ningún joven enfrente la presión del vapeo sin información ni apoyo.
+            </p>
+          </div>
+          <div class="org-intro-img">
+            <img src="testimonial_youth_1782280923194.png"
+                 alt="Jóvenes saludables y activos representando el objetivo de Respira Libre"
+                 loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Misión / Visión -->
+        <div class="mv-grid">
+          <article class="mv-card mv-mision" aria-label="Misión">
+            <div class="mv-header">
+              <div class="mv-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <h2>Misión</h2>
+            </div>
+            <p>Informar y prevenir el consumo de vapeadores mediante educación y concientización, llegando a jóvenes en las comunidades más vulnerables del país.</p>
+          </article>
+          <article class="mv-card mv-vision" aria-label="Visión">
+            <div class="mv-header">
+              <div class="mv-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h2>Visión</h2>
+            </div>
+            <p>Crear una generación libre de adicciones y mejor informada sobre los riesgos para la salud, construyendo un futuro más saludable y consciente para México.</p>
+          </article>
+        </div>
+
+        <!-- Valores -->
+        <div class="valores-section">
+          <span class="section-label">Lo que nos guía</span>
+          <h2>Nuestros valores</h2>
+          <div class="valores-grid" role="list">
+            <div class="valor-item" role="listitem">
+              <div class="valor-num" aria-hidden="true">01</div>
+              <h3>Evidencia científica</h3>
+              <p>Toda nuestra información está respaldada por investigaciones verificadas y actualizadas.</p>
+            </div>
+            <div class="valor-item" role="listitem">
+              <div class="valor-num" aria-hidden="true">02</div>
+              <h3>Respeto y empatía</h3>
+              <p>Nos acercamos a cada joven sin juicio, reconociendo los factores que influyen en sus decisiones.</p>
+            </div>
+            <div class="valor-item" role="listitem">
+              <div class="valor-num" aria-hidden="true">03</div>
+              <h3>Transparencia</h3>
+              <p>Comunicamos de forma honesta, clara y accesible para todos los públicos.</p>
+            </div>
+            <div class="valor-item" role="listitem">
+              <div class="valor-num" aria-hidden="true">04</div>
+              <h3>Compromiso comunitario</h3>
+              <p>Trabajamos de la mano con familias, escuelas e instituciones para generar cambio real.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Números -->
+        <div class="nos-numbers" role="list" aria-label="Logros de la organización">
+          <div class="nos-num-item" role="listitem">
+            <span class="nos-num-val" data-target="15000">0</span>
+            <span class="nos-num-label">Jóvenes informados</span>
+          </div>
+          <div class="nos-num-item" role="listitem">
+            <span class="nos-num-val" data-target="120">0</span>
+            <span class="nos-num-label">Escuelas alcanzadas</span>
+          </div>
+          <div class="nos-num-item" role="listitem">
+            <span class="nos-num-val" data-target="8">0</span>
+            <span class="nos-num-label">Años de experiencia</span>
+          </div>
+          <div class="nos-num-item" role="listitem">
+            <span class="nos-num-val" data-target="95" data-suffix="%">0</span>
+            <span class="nos-num-label">Satisfacción de beneficiarios</span>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /NOSOTROS -->
+
+
+    <!-- ─────────────────────────────────────
+         PÁGINA 3 · CONSECUENCIAS
+    ───────────────────────────────────── -->
+    <section class="page hidden" id="page-consecuencias" data-page="consecuencias" aria-labelledby="cons-h1">
+
+      <div class="page-hero page-hero--navy">
+        <div class="ph-content">
+          <div class="ph-breadcrumb light" aria-label="Ruta de navegación">
+            <button data-page="inicio">Inicio</button>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Consecuencias</span>
+          </div>
+          <h1 id="cons-h1">Consecuencias del Vapeo</h1>
+          <p>Información basada en evidencia científica publicada por la OMS, FDA y IMSS.</p>
+        </div>
+      </div>
+
+      <div class="page-body">
+
+        <!-- Alertas de estadística -->
+        <div class="alert-grid" role="list" aria-label="Estadísticas importantes">
+          <div class="alert-card alert-red" role="listitem">
+            <div class="alert-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div>
+              <strong>La mayoría de los vapeadores contienen nicotina</strong>
+              <span>incluso los etiquetados como "sin nicotina" o "naturales"</span>
+            </div>
+          </div>
+          <div class="alert-card alert-amber" role="listitem">
+            <div class="alert-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <strong>Los adolescentes son más vulnerables a desarrollar adicción</strong>
+              <span>el cerebro continúa su desarrollo hasta los 25 años</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjetas de consecuencias -->
+        <div class="cons-grid" role="list" aria-label="Consecuencias del vapeo">
+
+          <article class="cons-card" role="listitem" tabindex="0" id="cons-pulmon">
+            <div class="cons-card-top">
+              <div class="cons-badge cons-badge--red" aria-label="Riesgo alto">Riesgo Alto</div>
+              <div class="cons-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3C7 3 4 7 4 12v7c0 1 1 2 2 2h4v-5c0-1 1-2 2-2s2 1 2 2v5h4c1 0 2-1 2-2v-7c0-5-3-9-8-9z"/></svg>
+              </div>
+            </div>
+            <img src="lung_damage_1782280899728.png" alt="Comparación de pulmones sanos vs. pulmones dañados por vapeo" loading="lazy" />
+            <div class="cons-card-body">
+              <h2>Daño Pulmonar</h2>
+              <p>El vapor inhalado irrita y cicatriza los tejidos pulmonares, causando inflamación crónica, bronquitis y en casos graves, EVALI (lesión pulmonar asociada al vapeo), documentada en miles de pacientes.</p>
+              <ul class="cons-list" aria-label="Efectos en el pulmón">
+                <li>Reducción de hasta un 30% en capacidad pulmonar</li>
+                <li>Mayor riesgo de infecciones respiratorias</li>
+                <li>Inflamación de las vías respiratorias</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cons-card" role="listitem" tabindex="0" id="cons-nicotina">
+            <div class="cons-card-top">
+              <div class="cons-badge cons-badge--red" aria-label="Riesgo muy alto">Riesgo Muy Alto</div>
+              <div class="cons-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+              </div>
+            </div>
+            <div class="cons-card-body">
+              <h2>Adicción a la Nicotina</h2>
+              <p>Un solo vapeador puede contener tanta nicotina como 50 cigarrillos. La dependencia se desarrolla rápidamente en adolescentes y es extremadamente difícil de superar sin ayuda profesional.</p>
+              <ul class="cons-list">
+                <li>Dependencia física y psicológica severa</li>
+                <li>Síndrome de abstinencia al intentar dejarlo</li>
+                <li>Puerta de entrada a otras sustancias adictivas</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cons-card" role="listitem" tabindex="0" id="cons-cardio">
+            <div class="cons-card-top">
+              <div class="cons-badge cons-badge--red" aria-label="Riesgo alto">Riesgo Alto</div>
+              <div class="cons-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+            </div>
+            <div class="cons-card-body">
+              <h2>Problemas Cardiovasculares</h2>
+              <p>La nicotina aumenta la frecuencia cardíaca y la presión arterial de forma significativa, incrementando el riesgo de arritmias, daño vascular y enfermedades del corazón a largo plazo.</p>
+              <ul class="cons-list">
+                <li>Aumento de presión arterial y frecuencia cardíaca</li>
+                <li>Mayor riesgo de ataques cardíacos y AVE</li>
+                <li>Daño en arterias y vasos sanguíneos</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cons-card" role="listitem" tabindex="0" id="cons-rendimiento">
+            <div class="cons-card-top">
+              <div class="cons-badge cons-badge--amber" aria-label="Riesgo medio-alto">Riesgo Medio-Alto</div>
+              <div class="cons-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4v6a6 6 0 0 0 12 0V4"/><line x1="4" y1="20" x2="20" y2="20"/></svg>
+              </div>
+            </div>
+            <div class="cons-card-body">
+              <h2>Disminución del Rendimiento Físico</h2>
+              <p>El vapeo reduce la capacidad pulmonar y disminuye la oxigenación muscular, causando fatiga prematura, menor resistencia y tiempos de recuperación más prolongados en cualquier actividad física.</p>
+              <ul class="cons-list">
+                <li>Fatiga temprana durante el ejercicio</li>
+                <li>Menor resistencia aeróbica y anaeróbica</li>
+                <li>Mayor tiempo de recuperación post-esfuerzo</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cons-card" role="listitem" tabindex="0" id="cons-concentracion">
+            <div class="cons-card-top">
+              <div class="cons-badge cons-badge--red" aria-label="Riesgo alto">Riesgo Alto</div>
+              <div class="cons-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+              </div>
+            </div>
+            <div class="cons-card-body">
+              <h2>Dificultades de Concentración</h2>
+              <p>La nicotina altera los circuitos de dopamina en el cerebro. Los estudiantes que vapean reportan mayor dificultad para concentrarse, retener información y rendir académicamente.</p>
+              <ul class="cons-list">
+                <li>Menor capacidad de atención sostenida</li>
+                <li>Dificultad para memorizar y aprender</li>
+                <li>Peor rendimiento en evaluaciones académicas</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cons-card" role="listitem" tabindex="0" id="cons-cerebro">
+            <div class="cons-card-top">
+              <div class="cons-badge cons-badge--critical" aria-label="Riesgo crítico">Riesgo Crítico</div>
+              <div class="cons-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+              </div>
+            </div>
+            <img src="brain_health_1782280932485.png" alt="Ilustración del efecto de la nicotina en el cerebro adolescente" loading="lazy" />
+            <div class="cons-card-body">
+              <h2>Afectaciones al Desarrollo Cerebral</h2>
+              <p>En adolescentes, la nicotina interfiere directamente con el desarrollo del lóbulo frontal. El cerebro sigue madurando hasta los 25 años, y la exposición a nicotina en esta etapa genera daños permanentes.</p>
+              <ul class="cons-list">
+                <li>Daño en el lóbulo frontal (toma de decisiones)</li>
+                <li>Alteración del control de impulsos</li>
+                <li>Impacto negativo en la memoria a largo plazo</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="cons-card" role="listitem" tabindex="0" id="cons-ansiedad">
+            <div class="cons-card-top">
+              <div class="cons-badge cons-badge--red" aria-label="Riesgo muy alto">Riesgo Muy Alto</div>
+              <div class="cons-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+            </div>
+            <div class="cons-card-body">
+              <h2>Ansiedad y Dependencia Psicológica</h2>
+              <p>La abstinencia de nicotina genera ansiedad severa, irritabilidad e insomnio. Los jóvenes desarrollan una dependencia psicológica profunda que impacta todas las áreas de su vida cotidiana.</p>
+              <ul class="cons-list">
+                <li>Ansiedad severa en períodos sin vapear</li>
+                <li>Irritabilidad e inestabilidad emocional</li>
+                <li>Insomnio y alteraciones del sueño</li>
+              </ul>
+            </div>
+          </article>
+
+        </div><!-- /cons-grid -->
+
+        <div class="source-note" role="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <p>Fuentes: Organización Mundial de la Salud (OMS) · FDA · Instituto Mexicano del Seguro Social (IMSS) · New England Journal of Medicine.</p>
+        </div>
+
+      </div>
+    </section><!-- /CONSECUENCIAS -->
+
+
+    <!-- ─────────────────────────────────────
+         PÁGINA 4 · PREVENCIÓN
+    ───────────────────────────────────── -->
+    <section class="page hidden" id="page-prevencion" data-page="prevencion" aria-labelledby="prev-h1">
+
+      <div class="page-hero page-hero--green">
+        <div class="ph-content">
+          <div class="ph-breadcrumb light" aria-label="Ruta de navegación">
+            <button data-page="inicio">Inicio</button>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Prevención</span>
+          </div>
+          <h1 id="prev-h1">¿Cómo evitar el vapeo?</h1>
+          <p>Estrategias comprobadas para proteger tu salud y ayudar a quienes te rodean.</p>
+        </div>
+      </div>
+
+      <div class="page-body">
+
+        <div class="prev-layout">
+          <div class="prev-steps-col">
+            <span class="section-label">5 estrategias clave</span>
+            <h2>Acciones que hacen la diferencia</h2>
+
+            <ol class="prev-steps" aria-label="Pasos para evitar el vapeo">
+              <li class="prev-step" id="step-1">
+                <div class="ps-marker" aria-hidden="true">
+                  <span>1</span>
+                </div>
+                <div class="ps-body">
+                  <h3>Infórmate sobre los riesgos</h3>
+                  <p>El conocimiento es tu mejor defensa. Investiga los efectos reales del vapeo usando fuentes científicas confiables y comparte esa información con tu comunidad. Una persona informada tiene más herramientas para tomar decisiones responsables.</p>
+                </div>
+              </li>
+              <li class="prev-step" id="step-2">
+                <div class="ps-marker" aria-hidden="true">
+                  <span>2</span>
+                </div>
+                <div class="ps-body">
+                  <h3>Aprende a decir NO ante la presión social</h3>
+                  <p>La presión social es real, pero tu salud es tuya. Practica respuestas claras, directas y seguras para rechazar el vapeo sin sentirte excluido. Decir no con confianza es una habilidad que se aprende y fortalece.</p>
+                </div>
+              </li>
+              <li class="prev-step" id="step-3">
+                <div class="ps-marker" aria-hidden="true">
+                  <span>3</span>
+                </div>
+                <div class="ps-body">
+                  <h3>Practica deportes y actividades recreativas</h3>
+                  <p>El ejercicio libera endorfinas naturales que mejoran tu estado de ánimo y reducen el estrés sin necesidad de sustancias. Los jóvenes activos tienen un 60% menos de probabilidad de iniciar el consumo de vapeadores.</p>
+                </div>
+              </li>
+              <li class="prev-step" id="step-4">
+                <div class="ps-marker" aria-hidden="true">
+                  <span>4</span>
+                </div>
+                <div class="ps-body">
+                  <h3>Busca apoyo en familiares y amigos</h3>
+                  <p>Habla con personas de confianza o profesionales de la salud. No tienes que enfrentar la presión social solo. Pedir ayuda no es una señal de debilidad — es una muestra de fortaleza y madurez.</p>
+                </div>
+              </li>
+              <li class="prev-step" id="step-5">
+                <div class="ps-marker" aria-hidden="true">
+                  <span>5</span>
+                </div>
+                <div class="ps-body">
+                  <h3>Mantén hábitos saludables</h3>
+                  <p>Duerme las horas necesarias, aliméntate bien y mantén rutinas que promuevan tu bienestar físico y emocional. Un cuerpo y mente equilibrados son naturalmente más resilientes ante la presión y el estrés.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="prev-aside">
+            <div class="prev-img-block">
+              <img src="say_no_vaping_1782280909239.png"
+                   alt="Joven rechazando el vapeo con seguridad y confianza"
+                   loading="lazy" />
+            </div>
+
+            <div class="info-box" role="complementary" aria-label="Dato importante">
+              <div class="ib-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <strong>¿Sabías que?</strong>
+              </div>
+              <p>Los jóvenes que practican deportes regularmente tienen un <strong>60% menos de probabilidad</strong> de iniciar el consumo de sustancias adictivas.</p>
+              <p class="ib-source">Fuente: Journal of Adolescent Health, 2023</p>
+            </div>
+
+            <div class="info-box info-box--green" role="complementary" aria-label="Señales de alerta">
+              <div class="ib-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <strong>Señales de alerta</strong>
+              </div>
+              <ul aria-label="Lista de señales de alerta">
+                <li>Tos frecuente sin causa aparente</li>
+                <li>Irritabilidad inusual o cambios de humor</li>
+                <li>Gastos inexplicables de dinero</li>
+                <li>Fatiga al realizar actividad física normal</li>
+                <li>Aislamiento social repentino</li>
+              </ul>
+            </div>
+
+            <div class="help-cta" role="note">
+              <p>¿Necesitas ayuda o tienes dudas?</p>
+              <button class="btn btn-primary" data-page="contacto" id="prev-contacto-btn">Contáctanos ahora</button>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section><!-- /PREVENCIÓN -->
+
+
+    <!-- ─────────────────────────────────────
+         PÁGINA 5 · TESTIMONIOS
+    ───────────────────────────────────── -->
+    <section class="page hidden" id="page-testimonios" data-page="testimonios" aria-labelledby="test-h1">
+
+      <div class="page-hero page-hero--light">
+        <div class="ph-content">
+          <div class="ph-breadcrumb" aria-label="Ruta de navegación">
+            <button data-page="inicio">Inicio</button>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Testimonios</span>
+          </div>
+          <h1 id="test-h1">Voces que inspiran</h1>
+          <p>Historias reales de jóvenes que tomaron la decisión de dejar el vapeo y transformaron su vida.</p>
+        </div>
+      </div>
+
+      <div class="page-body">
+
+        <div class="test-featured">
+          <img src="testimonial_youth_1782280923194.png"
+               alt="Grupo de jóvenes saludables que superaron el vapeo"
+               loading="lazy" class="test-feat-img" />
+          <div class="test-feat-text">
+            <span class="section-label">Historia destacada</span>
+            <h2>"Recuperé mi capacidad de respirar y de vivir"</h2>
+            <blockquote>
+              "Mi grupo de amigos vapea, pero yo decido no hacerlo. Gracias a Respira Libre aprendí a decir no con seguridad y sin perder mis amistades. Hoy soy yo quien informa a otros sobre los riesgos. Es la mejor decisión que he tomado."
+            </blockquote>
+            <div class="test-author-row">
+              <div class="test-avatar test-av--green" aria-hidden="true">SM</div>
+              <div>
+                <strong>Sofía M., 19 años</strong>
+                <span>Ciudad de México &nbsp;·&nbsp; Voluntaria de Respira Libre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-grid" role="list" aria-label="Testimonios de jóvenes">
+
+          <article class="test-card" role="listitem" tabindex="0">
+            <div class="test-quote" aria-hidden="true">"</div>
+            <p>"Empecé a vapear a los 15 pensando que era inofensivo. A los 6 meses no podía correr sin quedarme sin aliento. Dejar el vapeo fue lo mejor que hice: ahora juego fútbol a nivel estatal."</p>
+            <div class="test-footer">
+              <div class="test-avatar" aria-hidden="true">CR</div>
+              <div>
+                <strong>Carlos R.</strong>
+                <span>17 años · Monterrey, NL</span>
+                <div class="test-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="test-card" role="listitem" tabindex="0">
+            <div class="test-quote" aria-hidden="true">"</div>
+            <p>"Dejé el vapeo después de un diagnóstico de bronquitis crónica a los 18 años. El proceso fue difícil, pero con apoyo lo logré. Mis calificaciones subieron y me siento con energía que no recordaba tener."</p>
+            <div class="test-footer">
+              <div class="test-avatar test-av--teal" aria-hidden="true">AL</div>
+              <div>
+                <strong>Andrés L.</strong>
+                <span>20 años · Guadalajara, JAL</span>
+                <div class="test-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="test-card" role="listitem" tabindex="0">
+            <div class="test-quote" aria-hidden="true">"</div>
+            <p>"Nunca pensé que vapear me causaría ansiedad, pero así fue. Cuando dejé, tardé semanas en estabilizarme. Hoy soy voluntaria en Respira Libre y ayudo a otros jóvenes a entender lo que yo viví."</p>
+            <div class="test-footer">
+              <div class="test-avatar test-av--purple" aria-hidden="true">VH</div>
+              <div>
+                <strong>Valentina H.</strong>
+                <span>21 años · Tijuana, BC</span>
+                <div class="test-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="test-card" role="listitem" tabindex="0">
+            <div class="test-quote" aria-hidden="true">"</div>
+            <p>"Mis padres me apoyaron cuando decidí dejarlo. Fue un camino difícil pero con orientación profesional lo logré. Hoy corro medios maratones. No me puedo imaginar volver a vapear."</p>
+            <div class="test-footer">
+              <div class="test-avatar test-av--navy" aria-hidden="true">MR</div>
+              <div>
+                <strong>Miguel R.</strong>
+                <span>22 años · León, GTO</span>
+                <div class="test-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="test-cta-block">
+          <h2>¿Tú también quieres un cambio?</h2>
+          <p>Nuestro equipo puede orientarte de forma confidencial y sin costo. Da el primer paso hoy.</p>
+          <button class="btn btn-primary" data-page="contacto" id="test-contacto-btn">Pedir orientación gratuita</button>
+        </div>
+
+      </div>
+    </section><!-- /TESTIMONIOS -->
+
+
+    <!-- ─────────────────────────────────────
+         PÁGINA 6 · CONTACTO
+    ───────────────────────────────────── -->
+    <section class="page hidden" id="page-contacto" data-page="contacto" aria-labelledby="cont-h1">
+
+      <div class="page-hero page-hero--navy">
+        <div class="ph-content">
+          <div class="ph-breadcrumb light" aria-label="Ruta de navegación">
+            <button data-page="inicio">Inicio</button>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Contacto</span>
+          </div>
+          <h1 id="cont-h1">Contáctanos</h1>
+          <p>Si necesitas orientación, apoyo o deseas reportar alguna situación relacionada con el vapeo, estamos aquí para ayudarte.</p>
+        </div>
+      </div>
+
+      <div class="page-body">
+
+        <div class="cont-layout">
+
+          <!-- Info -->
+          <div class="cont-info">
+            <span class="section-label">Información de contacto</span>
+            <h2>Estamos aquí para ti</h2>
+            <p class="cont-desc">Nuestro equipo especializado brinda orientación confidencial, gratuita y sin juicios. Puedes comunicarte por el medio que prefieras.</p>
+
+            <div class="cont-items" role="list" aria-label="Medios de contacto">
+              <div class="cont-item" role="listitem">
+                <div class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="ci-text">
+                  <strong>Correo electrónico</strong>
+                  <a href="mailto:contacto@respiralibre.org">contacto@respiralibre.org</a>
+                </div>
+              </div>
+
+              <div class="cont-item" role="listitem">
+                <div class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.64 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+                </div>
+                <div class="ci-text">
+                  <strong>Teléfono</strong>
+                  <a href="tel:+528001234567">+52 800 123 4567</a>
+                </div>
+              </div>
+
+              <div class="cont-item" role="listitem">
+                <div class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="ci-text">
+                  <strong>Horario de atención</strong>
+                  <span>Lunes a Viernes · 9:00 a 18:00 horas</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cont-social-block">
+              <p class="cont-social-label">Síguenos en redes sociales</p>
+              <div class="cont-social" role="list" aria-label="Redes sociales">
+                <a href="#" class="soc-btn" role="listitem" aria-label="Facebook de Respira Libre" id="soc-fb">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  Facebook
+                </a>
+                <a href="#" class="soc-btn" role="listitem" aria-label="Instagram de Respira Libre" id="soc-ig">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  Instagram
+                </a>
+                <a href="#" class="soc-btn" role="listitem" aria-label="YouTube de Respira Libre" id="soc-yt">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="cont-form-block">
+            <form class="cont-form" id="contact-form" novalidate aria-label="Formulario de contacto">
+              <h2>Envíanos un mensaje</h2>
+              <p class="form-intro">Respondemos en menos de 24 horas hábiles. Toda comunicación es confidencial.</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" aria-required="true" />
+                  <span class="form-error" id="nombre-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+52 (123) 456 7890" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" required autocomplete="email" aria-required="true" />
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                  <option value="">Selecciona un asunto</option>
+                  <option value="orientacion">Orientación personal</option>
+                  <option value="reporte">Reportar una situación</option>
+                  <option value="informacion">Solicitar información</option>
+                  <option value="colaboracion">Colaboración institucional</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+                <textarea id="mensaje" name="mensaje" rows="5"
+                  placeholder="Cuéntanos en qué podemos ayudarte. Tu mensaje es confidencial."
+                  required aria-required="true"></textarea>
+                <span class="form-error" id="mensaje-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" id="privacidad" name="privacidad" required aria-required="true" />
+                <label for="privacidad">He leído y acepto el <a href="#" id="aviso-link">Aviso de Privacidad</a>.</label>
+              </div>
+              <span class="form-error" id="privacidad-error" role="alert" aria-live="polite"></span>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Enviar mensaje
+              </button>
+
+              <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <div>
+                  <strong>¡Mensaje enviado correctamente!</strong>
+                  <span>Nos pondremos en contacto contigo en menos de 24 horas hábiles.</span>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /CONTACTO -->
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-main">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo" aria-label="Respira Libre">
+            <div class="logo-mark logo-mark--sm" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#1a5c36"/><path d="M14 30c0-5.52 4.48-10 10-10s10 4.48 10 10" stroke="white" stroke-width="3" stroke-linecap="round"/><path d="M24 20V13" stroke="white" stroke-width="3" stroke-linecap="round"/><path d="M18 15.5l6-3.5 6 3.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="33" r="3.5" fill="white"/></svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">Respira Libre</span>
+              <span class="logo-sub">Prevención del Vapeo</span>
+            </div>
+          </div>
+          <p>Organización comprometida con la salud de los jóvenes y la prevención del vapeo en México.</p>
+          <div class="footer-social" role="list" aria-label="Redes sociales">
+            <a href="#" class="fs-btn" role="listitem" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="fs-btn" role="listitem" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="fs-btn" role="listitem" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="fs-btn" role="listitem" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Navegación del pie de página">
+          <h3>Secciones</h3>
+          <ul>
+            <li><button data-page="inicio">Inicio</button></li>
+            <li><button data-page="nosotros">Nosotros</button></li>
+            <li><button data-page="consecuencias">Consecuencias</button></li>
+            <li><button data-page="prevencion">Prevención</button></li>
+            <li><button data-page="testimonios">Testimonios</button></li>
+            <li><button data-page="contacto">Contacto</button></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:contacto@respiralibre.org">contacto@respiralibre.org</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.64 3.42 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+              <a href="tel:+528001234567">+52 800 123 4567</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Lun–Vie · 9:00 – 18:00 hrs</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Aviso de Privacidad</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+          </ul>
+          <div class="footer-cert" role="note" aria-label="Información científica certificada">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Información avalada por la OMS y el IMSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="footer-phrase">"Respirar libre es vivir mejor."</p>
+        <p class="footer-copy">© 2026 Respira Libre · Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
